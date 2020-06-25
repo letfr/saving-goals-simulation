@@ -1,0 +1,44 @@
+@import './styles/variables';
+
+// reset 
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// style 
+#app {
+  width: 100vw;
+  height: 100%;
+  background-color: $light-gray;
+  font-family: $font-default;
+}
+
+header {
+  width: 100%;
+  height: 79px;
+  background-color: #FFFFFF;
+  figure {
+    padding: 28px 37px;
+  }
+  img {
+    width: 95px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 54px;
+}
+
+#content {
+  .headline {
+    font-size: 24px;
+    font-weight: 400;
+    color: $primary-color;
+  }
+}
