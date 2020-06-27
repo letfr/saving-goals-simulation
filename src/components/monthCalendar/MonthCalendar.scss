@@ -1,0 +1,43 @@
+@import '../../styles/variables.scss';
+
+.btn-icon {
+  width: 48px;
+  height: 56px;
+  text-align: center;
+  background: $gray;
+  border: 1px solid $gray;
+  cursor: pointer;
+  .arrow.right {
+    transform: rotate(-180deg);
+  }
+}
+
+#btn_calendar_back {
+  border-radius: 4px 0px 0px 4px;
+}
+
+#btn_calendar_next {
+  border-radius: 0px 4px 4px 0px;
+}
+
+.date-container {
+  font-size: 20px;
+  font-weight: 600;
+  width: 136px;
+  height: 56px;
+  border: 1px solid $gray;
+  outline: none;
+  text-align: center;
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+.calendar-container {
+  display: flex;
+  width: 100%;
+}
