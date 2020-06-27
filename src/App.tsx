@@ -1,6 +1,9 @@
 import * as React from 'react';
-import CardButton from './components/cardButton/CardButton';
 import './App.scss';
+import CardButton from './components/cards/cardButton/CardButton';
+import InputMoney from './components/inputMoney/InputMoney';
+import MonthCalendar from './components/monthCalendar/MonthCalendar';
+
 export class App extends React.Component {
   public render() {
     return (
@@ -12,9 +15,18 @@ export class App extends React.Component {
         </header>
         <section id="content" className="wrapper">
           <h1 className="headline">
-            Let's plan your <b>saving goal.</b>
+            Let&apos;s plan your <b>saving goal.</b>
           </h1>
-          <CardButton />
+          <CardButton>
+            <div className="flexbox">
+              <InputMoney
+                name="amount-input"
+                label="Total amount"
+                placeholder="ex: 25,000"
+              />
+              <MonthCalendar label="Reach goal by" />
+            </div>
+          </CardButton>
         </section>
       </main>
     );

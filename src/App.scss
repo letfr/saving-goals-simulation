@@ -1,6 +1,5 @@
 @import './styles/variables';
 
-// reset 
 * {
   margin: 0;
   border: 0;
@@ -8,9 +7,7 @@
   box-sizing: border-box;
 }
 
-// style 
 #app {
-  width: 100vw;
   height: 100%;
   background-color: $light-gray;
   font-family: $font-default;
@@ -41,4 +38,16 @@ header {
     font-weight: 400;
     color: $primary-color;
   }
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  display: block;
+  margin-top: 40px;
+  font-weight: 600;
+  line-height: 1.8;
 }
