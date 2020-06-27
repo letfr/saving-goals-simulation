@@ -1,0 +1,35 @@
+@import '../../styles/variables.scss';
+
+input {
+  font-size: 20px;
+  font-weight: 600;
+  width: 177px;
+  height: 56px;
+  padding: 16px;
+  border: 1px solid $gray;
+  border-radius: 0 4px 4px 0;
+  outline: none;
+  &[type=number] {
+  -moz-appearance: textfield;
+  }
+  &::-webkit-outer-spin-button, 
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+}
+
+.input-money-container {
+  display: flex;
+  width: 100%;
+  .dollar-sign {
+    width: 56px;
+    height: 56px;
+    padding: 14px 16px;
+    text-align: center;
+    font-size: 22px;
+    color: $dark-gray;
+    background: $light-gray;
+    border: 1px solid $gray;
+    border-radius: 4px 0px 0px 4px;
+  }
+}
