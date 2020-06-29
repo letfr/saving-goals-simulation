@@ -1,10 +1,12 @@
 import './CardButton.scss';
 import * as React from 'react';
 
-export interface PropertiesCard {
+export interface PropertiesCardButton {
   children: React.ReactNode;
 }
-const CardButton: React.FC = (props: PropertiesCard) => (
+const CardButton: React.FC<PropertiesCardButton> = (
+  props: PropertiesCardButton
+) => (
   <div className="card">
     <div className="card-header">
       <img src={require('../../../icons/house.svg')} alt="house icon" />
